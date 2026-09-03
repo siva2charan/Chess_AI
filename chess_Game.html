@@ -690,18 +690,18 @@
 
                 <label>Play As</label>
 
-                               <select id="ddlSide">
-    <option value="White" selected>White</option>
-    <option value="Black">Black</option>
-</select>
+                <asp:DropDownList ID="ddlSide" runat="server">
+                    <asp:ListItem Selected="True">White</asp:ListItem>
+                    <asp:ListItem>Black</asp:ListItem>
+                </asp:DropDownList>
 
                 <label>Difficulty</label>
 
-              <select id="ddlDifficulty">
-    <option value="easy">easy</option>
-    <option value="medium">medium</option>
-    <option value="hard">hard</option>
-</select>
+                <asp:DropDownList ID="ddlDifficulty" runat="server">
+                    <asp:ListItem>easy</asp:ListItem>
+                    <asp:ListItem>medium</asp:ListItem>
+                    <asp:ListItem>hard</asp:ListItem>
+                </asp:DropDownList>
 
                 <button type="button" id="btnNewGame" class="btn btnNew" onclick="newGame()">
                     &#9822; Start Game
@@ -775,7 +775,7 @@
         // ---------------------------------------------------------------
         // Config
         // ---------------------------------------------------------------
-       const API = "http://0.0.0.0:8000";
+        const API = "http://localhost:8000";
 
         const pieceMap = {
             // White Pieces
